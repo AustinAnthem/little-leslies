@@ -1,0 +1,185 @@
+---
+import '../styles/global.css';
+
+const venmoUrl = 'https://example.com/venmo-placeholder';
+const storeUrl = 'https://example.com/webstore-placeholder';
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="Join the League of Little Leslies and help support Equality Texas." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Imperial+Script&family=Ledger&family=Noto+Sans:wght@400;500;600;700&display=swap" />
+    <link rel="icon" type="image/svg+xml" href={`${import.meta.env.BASE_URL}favicon.svg`} />
+    <title>League of Little Leslies</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="wordmark" href="#top" aria-label="League of Little Leslies home">
+        <span class="wordmark-mark" aria-hidden="true">LL</span>
+        <span>League of<br /><strong>Little Leslies</strong></span>
+      </a>
+      <a class="header-link" href="#how-to-join">How to join</a>
+    </header>
+
+    <main id="top">
+      <section class="hero section-shell">
+        <div class="hero-copy">
+          <h1>Big heart.<br /><span class="pride-text">Little Leslies.<br />Big pride.</span></h1>
+          <p class="hero-lede">We're raffling off ten statues of Leslie to support Equality Texas. Join the League of Little Leslies today by drafting your Leslie!</p>
+          <p class="hero-lede">Raffle takes place on September 7th!</p>
+          <div class="hero-actions" id="how-to-join">
+            <a class="button button-primary" href={venmoUrl} data-venmo-link>Join via Venmo</a>
+            <a class="button button-secondary" href={storeUrl} target="_blank" rel="noopener noreferrer">Join via the Webstore</a>
+          </div>
+          <p class="microcopy">$10 gets you 1 entry. $50 gets you 6 entries.</p>
+        </div>
+        <div class="hero-art" aria-label="Placeholder for a photo or illustration of a Little Leslie player" role="img">
+          <span class="simple-mark" aria-hidden="true">LL</span>
+          <p>Artwork<br />coming soon</p>
+        </div>
+      </section>
+
+      <section class="ticker" aria-label="Campaign details">
+        <div class="ticker-track">
+          <span class="ticker-group"><span>10 figures</span><b aria-hidden="true">&#10022;</b><span>1 incredible cause</span><b aria-hidden="true">&#10022;</b><span>0 boring players</span><b aria-hidden="true">&#10022;</b></span>
+          <span class="ticker-group" aria-hidden="true"><span>10 figures</span><b>&#10022;</b><span>1 incredible cause</span><b>&#10022;</b><span>0 boring players</span><b>&#10022;</b></span>
+        </div>
+      </section>
+
+      <section class="office-release" aria-labelledby="release-title">
+        <div class="section-shell">
+          <div class="release-masthead">
+          <div>
+            <p class="eyebrow eyebrow-dark">Office of the Commissioner</p>
+            <p class="release-kicker">Official news release</p>
+          </div>
+          <p class="release-number">Release No. 001<br />August 2026</p>
+          </div>
+          <article class="release-paper">
+          <p class="release-to">To all supporters of the League</p>
+          <h2 id="release-title">There was once only one Leslie.</h2>
+          <div class="release-body">
+            <p>One legend. One unforgettable Austin icon. Leslie did not ask permission. He just showed up.</p>
+            <p>Loudly. Colorfully. Unapologetically. And Austin was better because of it.</p>
+            <p>So naturally, the League Office has determined that the best way to honor that spirit is by doing what any reasonable organization would do: create a soccer league for tiny, hand-painted Leslie players.</p>
+            <p>Austin Anthem and The Fighting Leslies Drinking Club have banded together to launch <em>The League of Little Leslies</em>, a limited collection created to celebrate Leslie's legacy, Pride Month, and the wonderfully weird spirit that makes Austin special.</p>
+            <p>The League's Front Office believes that everyone deserves the freedom to live openly, authentically, and proudly. That is why this inaugural fundraising campaign supports <strong>Equality Texas</strong>, which works every day to secure equality for LGBTQIA+ Texans through education, political action, community organizing, and collaboration.</p>
+          </div>
+          <p class="release-signoff">The League Office has spoken.<br /><span class="signature">The Commissioner</span><strong>Commissioner, League of Little Leslies</strong></p>
+          </article>
+          <a class="text-link release-link" href="#why">Continue to the league report</a>
+        </div>
+      </section>
+
+      <section class="kits">
+        <div class="section-shell">
+          <div class="section-heading">
+          <div>
+            <p class="eyebrow eyebrow-dark">Select your kit</p>
+            <h2>Same player.<br /><em>Different kit.</em></h2>
+          </div>
+          <p>When selected, each player joins your club wearing the kit you choose. Maximum Leslie.</p>
+          </div>
+          <div class="kit-grid">
+          <article class="kit-card kit-pride">
+            <div class="kit-placeholder" aria-label="Placeholder for Pride Kit artwork" role="img"><span>01</span><strong>PRIDE<br />KIT</strong></div>
+            <div class="kit-card-copy"><h3>The Pride Kit</h3><p>A celebration of Pride Month and Leslie's fearless, colorful spirit.</p></div>
+          </article>
+          <article class="kit-card kit-austin">
+            <div class="kit-placeholder" aria-label="Placeholder for Austin kit artwork" role="img"><span>02</span><strong>AUSTIN<br />KIT</strong></div>
+            <div class="kit-card-copy"><h3>The Austin Kit</h3><p>A tribute to what brought us all together in the first place: Austin soccer.</p></div>
+          </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="join-band" id="join">
+        <div class="section-shell join-layout">
+          <div><p class="eyebrow">Transfer window now open</p><h2>Pick your entry.<br /><em>Join the roster.</em></h2></div>
+          <div class="join-details">
+            <div class="price-row"><strong>$10</strong><span>1 entry</span></div>
+            <div class="price-row"><strong>$50</strong><span>6 entries <b>bonus entry included</b></span></div>
+            <p>The campaign runs through August 31, 2026. The drawing will take place at an event on September 7, 2026. Event location to be announced.</p>
+            <div class="hero-actions">
+              <a class="button button-light" href={venmoUrl} data-venmo-link>Join via Venmo</a>
+              <a class="button button-outline-light" href={storeUrl} target="_blank" rel="noopener noreferrer">Join via the Webstore</a>
+            </div>
+            <p class="microcopy light-copy">Venmo supporters: please include your email address with your donation. The webstore collects it automatically.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="details" id="why">
+        <div class="section-shell section-grid">
+          <div><p class="eyebrow eyebrow-dark">Why we're doing this</p><h2>Keep Austin<br /><em>weird.</em></h2></div>
+          <div class="body-copy">
+          <p>Leslie spent a lifetime reminding Austin that being different was not something to hide. It was something to celebrate.</p>
+          <p>Every entry helps the Fighting Leslies Drinking Club and <strong>MLS in Austin Supporters Group</strong>, a Texas 501(c)(3) nonprofit, support Equality Texas and its work to ensure LGBTQIA+ Texans are treated with dignity, fairness, and respect.</p>
+          <p class="pull-quote">Authenticity. Kindness. Community. Ability to make people smile.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="league-rules">
+        <div class="section-shell">
+          <p class="eyebrow eyebrow-dark">League rules</p>
+          <h2>And now,<br /><em>the rules.</em></h2>
+          <div class="rules-list">
+          <details open>
+            <summary>Winner's Section</summary>
+            <div class="rule-content"><p>Ten individuals will be selected to receive a numbered, hand-painted Little Leslie player in their chosen kit, plus an official League of Little Leslies Player Card.</p><p>Winners who are not present at the September 7 event will be contacted by email.</p></div>
+          </details>
+          <details>
+            <summary>Important Dates</summary>
+            <div class="rule-content"><p><strong>Campaign:</strong> Through August 31, 2026.</p><p><strong>Drawing:</strong> Monday, September 7, 2026, at an event with a location to be announced.</p><p><strong>Venmo supporters:</strong> Include your email address with your donation. The webstore collects it automatically.</p></div>
+          </details>
+          <details id="official-rules">
+            <summary>Official Rules</summary>
+            <div class="rule-content"><p>Every player must be unique. Every player must bring a little more joy into the world. Every player must help support a more inclusive Texas. Nobody is allowed to be boring.</p><p>Formal raffle rules, eligibility details, and required disclosures will be posted here before entries open.</p></div>
+          </details>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <dialog class="venmo-dialog" id="venmo-dialog" aria-labelledby="venmo-dialog-title" aria-describedby="venmo-dialog-description">
+      <div class="dialog-content">
+        <button class="dialog-close" type="button" data-close-venmo aria-label="Close Venmo reminder">&times;</button>
+        <p class="eyebrow eyebrow-dark">Before you join</p>
+        <h2 id="venmo-dialog-title">One important note.</h2>
+        <p id="venmo-dialog-description">Include your email address in the Venmo notes so you can be contacted if you win.</p>
+        <a class="button button-primary" id="venmo-proceed" href={venmoUrl} target="_blank" rel="noopener noreferrer">Proceed to Venmo</a>
+      </div>
+    </dialog>
+
+    <footer class="site-footer section-shell">
+      <div class="footer-top"><div><a class="wordmark footer-wordmark" href="#top"><span class="wordmark-mark" aria-hidden="true">LL</span><span>League of<br /><strong>Little Leslies</strong></span></a><p>A collaboration between Austin Anthem and The Fighting Leslies Drinking Club.</p></div><div class="footer-links"><a href="#official-rules">Official rules</a><a href="#why">About the cause</a><a href="mailto:hello@example.com">Contact the league office</a></div></div>
+      <div class="footer-bottom"><span>&copy; 2026 MLS in Austin Supporters Group</span><span>Made with joy in Austin, Texas.</span></div>
+    </footer>
+    <script>
+      const venmoDialog = document.querySelector('#venmo-dialog');
+      const venmoLinks = document.querySelectorAll('[data-venmo-link]');
+      const closeVenmo = venmoDialog?.querySelector('[data-close-venmo]');
+
+      venmoLinks.forEach((link) => {
+        link.addEventListener('click', (event) => {
+          event.preventDefault();
+          venmoDialog?.showModal();
+        });
+      });
+
+      closeVenmo?.addEventListener('click', () => venmoDialog?.close());
+      venmoDialog?.addEventListener('click', (event) => {
+        if (event.target === venmoDialog) venmoDialog.close();
+      });
+
+      const officialRules = document.querySelector('#official-rules');
+      if (officialRules && window.location.hash === '#official-rules') officialRules.open = true;
+    </script>
+  </body>
+</html>
