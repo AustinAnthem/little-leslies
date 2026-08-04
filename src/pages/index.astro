@@ -3,6 +3,11 @@ import '../styles/global.css';
 
 const venmoUrl = 'https://example.com/venmo-placeholder';
 const storeUrl = 'https://example.com/webstore-placeholder';
+const assetUrl = (path) => `${import.meta.env.BASE_URL.replace(/\/$/, '')}/${path}`;
+const logoUrl = assetUrl('league-of-leslies.png');
+const bothLesliesUrl = assetUrl('leslies/both-leslies.png');
+const prideLeslieUrl = assetUrl('leslies/pride-kit-leslie.png');
+const austinLeslieUrl = assetUrl('leslies/austin-kit-leslie.png');
 ---
 
 <!doctype html>
@@ -14,13 +19,13 @@ const storeUrl = 'https://example.com/webstore-placeholder';
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Imperial+Script&family=Ledger&family=Noto+Sans:wght@400;500;600;700&display=swap" />
-    <link rel="icon" type="image/svg+xml" href={`${import.meta.env.BASE_URL}favicon.svg`} />
+    <link rel="icon" type="image/png" href={logoUrl} />
     <title>League of Little Leslies</title>
   </head>
   <body>
     <header class="site-header">
       <a class="wordmark" href="#top" aria-label="League of Little Leslies home">
-        <span class="wordmark-mark" aria-hidden="true">LL</span>
+        <img class="wordmark-logo" src={logoUrl} alt="" width="35" height="35" />
         <span>League of<br /><strong>Little Leslies</strong></span>
       </a>
       <a class="header-link" href="#how-to-join">How to join</a>
@@ -38,9 +43,9 @@ const storeUrl = 'https://example.com/webstore-placeholder';
           </div>
           <p class="microcopy">$10 gets you 1 entry. $50 gets you 6 entries.</p>
         </div>
-        <div class="hero-art" aria-label="Placeholder for a photo or illustration of a Little Leslie player" role="img">
-          <span class="simple-mark" aria-hidden="true">LL</span>
-          <p>Artwork<br />coming soon</p>
+        <div class="hero-art">
+          <img class="hero-art-image" src={bothLesliesUrl} alt="Two Little Leslie players facing each other, one in a Pride kit and one in an Austin kit." />
+          <img class="hero-art-logo" src={logoUrl} alt="" />
         </div>
       </section>
 
@@ -48,6 +53,27 @@ const storeUrl = 'https://example.com/webstore-placeholder';
         <div class="ticker-track">
           <span class="ticker-group"><span>10 figures</span><b aria-hidden="true">&#10022;</b><span>1 incredible cause</span><b aria-hidden="true">&#10022;</b><span>0 boring players</span><b aria-hidden="true">&#10022;</b></span>
           <span class="ticker-group" aria-hidden="true"><span>10 figures</span><b>&#10022;</b><span>1 incredible cause</span><b>&#10022;</b><span>0 boring players</span><b>&#10022;</b></span>
+        </div>
+      </section>
+
+      <section class="video-announcement" aria-labelledby="announcement-title">
+        <div class="section-shell">
+          <div class="video-heading">
+            <div>
+              <p class="eyebrow">League announcement</p>
+              <h2 id="announcement-title">Meet the <em>Little Leslies.</em></h2>
+            </div>
+            <p>Press play for the official announcement from the League Office.</p>
+          </div>
+          <div class="video-frame">
+            <iframe
+              src="https://www.youtube-nocookie.com/embed/axYcg0Qw-lc"
+              title="League of Little Leslies announcement"
+              loading="lazy"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
         </div>
       </section>
 
@@ -87,11 +113,11 @@ const storeUrl = 'https://example.com/webstore-placeholder';
           </div>
           <div class="kit-grid">
           <article class="kit-card kit-pride">
-            <div class="kit-placeholder" aria-label="Placeholder for Pride Kit artwork" role="img"><span>01</span><strong>PRIDE<br />KIT</strong></div>
+            <div class="kit-placeholder"><img class="kit-image" src={prideLeslieUrl} alt="Little Leslie player wearing the Pride Kit" /></div>
             <div class="kit-card-copy"><h3>The Pride Kit</h3><p>A celebration of Pride Month and Leslie's fearless, colorful spirit.</p></div>
           </article>
           <article class="kit-card kit-austin">
-            <div class="kit-placeholder" aria-label="Placeholder for Austin kit artwork" role="img"><span>02</span><strong>AUSTIN<br />KIT</strong></div>
+            <div class="kit-placeholder"><img class="kit-image" src={austinLeslieUrl} alt="Little Leslie player wearing the Austin Kit" /></div>
             <div class="kit-card-copy"><h3>The Austin Kit</h3><p>A tribute to what brought us all together in the first place: Austin soccer.</p></div>
           </article>
           </div>
@@ -158,7 +184,7 @@ const storeUrl = 'https://example.com/webstore-placeholder';
     </dialog>
 
     <footer class="site-footer section-shell">
-      <div class="footer-top"><div><a class="wordmark footer-wordmark" href="#top"><span class="wordmark-mark" aria-hidden="true">LL</span><span>League of<br /><strong>Little Leslies</strong></span></a><p>A collaboration between Austin Anthem and The Fighting Leslies Drinking Club.</p></div><div class="footer-links"><a href="#official-rules">Official rules</a><a href="#why">About the cause</a><a href="mailto:hello@example.com">Contact the league office</a></div></div>
+      <div class="footer-top"><div><a class="wordmark footer-wordmark" href="#top"><img class="wordmark-logo" src={logoUrl} alt="" width="35" height="35" /><span>League of<br /><strong>Little Leslies</strong></span></a><p>A collaboration between Austin Anthem and The Fighting Leslies Drinking Club.</p></div><div class="footer-links"><a href="#official-rules">Official rules</a><a href="#why">About the cause</a><a href="mailto:hello@example.com">Contact the league office</a></div></div>
       <div class="footer-bottom"><span>&copy; 2026 MLS in Austin Supporters Group</span><span>Made with joy in Austin, Texas.</span></div>
     </footer>
     <script>
