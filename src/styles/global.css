@@ -45,7 +45,7 @@ h1, h2 { font-weight: 600; letter-spacing: -.04em; }
 
 .pride-text, h1 em, h2 em { display: inline-block; padding-right: .12em; overflow: visible; background: var(--pride-light); background-clip: text; -webkit-background-clip: text; color: transparent; line-height: 1.08; }
 .pride-text { padding-bottom: .12em; margin-bottom: -.12em; }
-.hero h1 .pride-text, .join-band h2 em { background-image: var(--pride-dark); }
+.hero h1 .pride-text, .join-band h2 em, .video-heading h2 em { background-image: var(--pride-dark); }
 
 .hero-art { position: relative; display: grid; min-height: 430px; place-items: center; overflow: hidden; background: var(--austin-green); transform: rotate(2deg); }
 .hero-art-image { display: block; width: 100%; height: 100%; object-fit: contain; }
