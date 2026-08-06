@@ -1,7 +1,7 @@
 import { defineConfig } from 'astro/config';
 
 export default defineConfig({
-  site: 'https://austinanthem.github.io',
-  base: '/little-leslies',
+  site: 'https://littleleslies.org',
+  base: '/',
   output: 'static'
 });
