@@ -3,6 +3,7 @@ import '../styles/global.css';
 
 const venmoUrl = 'https://example.com/venmo-placeholder';
 const storeUrl = 'https://example.com/webstore-placeholder';
+const equalityTexasUrl = 'https://equalitytexas.org/';
 const assetUrl = (path) => `${import.meta.env.BASE_URL.replace(/\/$/, '')}/${path}`;
 const logoUrl = assetUrl('league-of-leslies.png');
 const bothLesliesUrl = assetUrl('leslies/both-leslies.png');
@@ -37,7 +38,7 @@ const fightingLesliesUrl = assetUrl('fighting-leslies-pride.jpeg');
       <section class="hero section-shell">
         <div class="hero-copy">
           <h1>Big heart.<br /><span class="pride-text">Little Leslies.<br />Big pride.</span></h1>
-          <p class="hero-lede">We're raffling off ten statues of Leslie to support Equality Texas. Join the League of Little Leslies today by drafting your Leslie!</p>
+          <p class="hero-lede">Austin Anthem and the Fighting Leslies are raffling off ten statues of Leslie to support <a href={equalityTexasUrl} target="_blank" rel="noopener noreferrer">Equality Texas</a>. Join the League of Little Leslies today by drafting your Leslie!</p>
           <p class="hero-lede">Raffle takes place on September 7th!</p>
           <div class="hero-actions" id="how-to-join">
             <a class="button button-primary" href={venmoUrl} data-venmo-link>Join via Venmo</a>
@@ -96,7 +97,7 @@ const fightingLesliesUrl = assetUrl('fighting-leslies-pride.jpeg');
             <p>Loudly. Colorfully. Unapologetically. And Austin was better because of it.</p>
             <p>So naturally, the League Office has determined that the best way to honor that spirit is by doing what any reasonable organization would do: create a soccer league for tiny, hand-painted Leslie players.</p>
             <p>Austin Anthem and The Fighting Leslies Drinking Club have banded together to launch <em>The League of Little Leslies</em>, a limited collection created to celebrate Leslie's legacy, Pride Month, and the wonderfully weird spirit that makes Austin special.</p>
-            <p>The League's Front Office believes that everyone deserves the freedom to live openly, authentically, and proudly. That is why this inaugural fundraising campaign supports <strong>Equality Texas</strong>, which works every day to secure equality for LGBTQIA+ Texans through education, political action, community organizing, and collaboration.</p>
+            <p>The League's Front Office believes that everyone deserves the freedom to live openly, authentically, and proudly. That is why this inaugural fundraising campaign supports <strong><a href={equalityTexasUrl} target="_blank" rel="noopener noreferrer">Equality Texas</a></strong>, which works every day to secure equality for LGBTQIA+ Texans through education, political action, community organizing, and collaboration.</p>
           </div>
           <p class="release-signoff">The League Office has spoken.<br /><span class="signature">The Commissioner</span><strong>Commissioner, League of Little Leslies</strong></p>
           </article>
@@ -147,7 +148,7 @@ const fightingLesliesUrl = assetUrl('fighting-leslies-pride.jpeg');
           <div><p class="eyebrow eyebrow-dark">Why we're doing this</p><h2>Keep Austin<br /><em>weird.</em></h2></div>
           <div class="body-copy">
           <p>Leslie spent a lifetime reminding Austin that being different was not something to hide. It was something to celebrate.</p>
-          <p>Every entry helps the Fighting Leslies Drinking Club and <strong>MLS in Austin Supporters Group</strong>, a Texas 501(c)(3) nonprofit, support Equality Texas and its work to ensure LGBTQIA+ Texans are treated with dignity, fairness, and respect.</p>
+          <p>Every entry helps the Fighting Leslies Drinking Club and <strong>MLS in Austin Supporters Group</strong>, a Texas 501(c)(3) nonprofit, support <a href={equalityTexasUrl} target="_blank" rel="noopener noreferrer">Equality Texas</a> and its work to ensure LGBTQIA+ Texans are treated with dignity, fairness, and respect.</p>
           <p class="pull-quote">Authenticity. Kindness. Community. Ability to make people smile.</p>
           </div>
         </div>
