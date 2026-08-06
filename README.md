@@ -18,7 +18,7 @@ npm install
 npm run dev
 ```
 
-The local site is available at `http://localhost:4321/little-leslies`.
+The local site is available at `http://localhost:4321/`.
 
 Create and preview a production build with:
 
@@ -31,21 +31,35 @@ npm run preview
 
 Pushes to `main` automatically build and deploy the static site through `.github/workflows/deploy.yml`.
 
-The current project deployment URL is:
+The production site is available at:
 
-`https://austinanthem.github.io/little-leslies`
+`https://littleleslies.org`
 
-GitHub Pages must be configured to use **GitHub Actions** as its source. When a custom domain is available, update `site` in `astro.config.mjs` and add a `public/CNAME` file.
+GitHub Pages must be configured to use **GitHub Actions** as its source. The custom domain is configured in `astro.config.mjs` and `public/CNAME`.
+
+For the Namecheap DNS configuration, point the apex domain to GitHub Pages with these records:
+
+```text
+A     @     185.199.108.153
+A     @     185.199.109.153
+A     @     185.199.110.153
+A     @     185.199.111.153
+AAAA  @     2606:50c0:8000::153
+AAAA  @     2606:50c0:8001::153
+AAAA  @     2606:50c0:8002::153
+AAAA  @     2606:50c0:8003::153
+CNAME www   austinanthem.github.io
+```
+
+Enable **Enforce HTTPS** in the repository's GitHub Pages settings after DNS propagation and certificate provisioning complete.
 
 ## Before campaign launch
 
-The public preview intentionally contains placeholders. Replace or publish the following before accepting entries:
+The public preview still contains launch placeholders. Complete the following before accepting entries:
 
 - Real Venmo URL in `src/pages/index.astro`
 - Real webstore URL in `src/pages/index.astro`
-- Approved artwork and organization logos
-- Real contact email and social links
-- Formal raffle rules, eligibility details, and required disclosures
+- Real footer contact email in `src/pages/index.astro` (currently `hello@example.com`)
 - Final legal and beneficiary review
 
 Do not accept public entries until the purchase links, official rules, and required disclosures are complete.
