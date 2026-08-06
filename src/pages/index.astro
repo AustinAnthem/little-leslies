@@ -1,9 +1,10 @@
 ---
 import '../styles/global.css';
 
-const venmoUrl = 'https://example.com/venmo-placeholder';
-const storeUrl = 'https://example.com/webstore-placeholder';
+const venmoUrl = 'https://venmo.com/u/Fighting-Leslies';
+const storeUrl = 'https://store.austinanthem.org/store/p/little-leslies-raffle';
 const equalityTexasUrl = 'https://equalitytexas.org/';
+const donationUrl = 'https://equalitytexas.org/give/501c3/';
 const assetUrl = (path) => `${import.meta.env.BASE_URL.replace(/\/$/, '')}/${path}`;
 const logoUrl = assetUrl('league-of-leslies.png');
 const bothLesliesUrl = assetUrl('leslies/both-leslies.png');
@@ -43,6 +44,7 @@ const fightingLesliesUrl = assetUrl('fighting-leslies-pride.jpeg');
           <div class="hero-actions" id="how-to-join">
             <a class="button button-primary" href={venmoUrl} data-venmo-link>Join via Venmo</a>
             <a class="button button-secondary" href={storeUrl} target="_blank" rel="noopener noreferrer">Join via the Webstore</a>
+            <a class="button button-secondary" href={donationUrl} data-donate-link>Donate Directly</a>
           </div>
           <p class="microcopy">$10 gets you 1 entry. $50 gets you 6 entries.</p>
         </div>
@@ -133,10 +135,11 @@ const fightingLesliesUrl = assetUrl('fighting-leslies-pride.jpeg');
           <div class="join-details">
             <div class="price-row"><strong>$10</strong><span>1 entry</span></div>
             <div class="price-row"><strong>$50</strong><span>6 entries <b>bonus entry included</b></span></div>
-            <p>The campaign runs through August 31, 2026. The drawing will take place at an event on September 7, 2026. Event location to be announced.</p>
+            <p>The campaign runs through September 7, 2026. The drawing will take place at an event on September 7, 2026. Event location to be announced.</p>
             <div class="hero-actions">
               <a class="button button-light" href={venmoUrl} data-venmo-link>Join via Venmo</a>
               <a class="button button-outline-light" href={storeUrl} target="_blank" rel="noopener noreferrer">Join via the Webstore</a>
+              <a class="button button-outline-light" href={donationUrl} data-donate-link>Donate Directly</a>
             </div>
             <p class="microcopy light-copy">Venmo supporters: please include your email address with your donation. The webstore collects it automatically.</p>
           </div>
@@ -209,7 +212,7 @@ const fightingLesliesUrl = assetUrl('fighting-leslies-pride.jpeg');
           </details>
           <details>
             <summary>Important Dates</summary>
-            <div class="rule-content"><p><strong>Campaign:</strong> Through August 31, 2026.</p><p><strong>Drawing:</strong> Monday, September 7, 2026, at an event with a location to be announced.</p><p><strong>Venmo supporters:</strong> Include your email address with your donation. The webstore collects it automatically.</p></div>
+            <div class="rule-content"><p><strong>Campaign:</strong> Through September 7, 2026.</p><p><strong>Drawing:</strong> Monday, September 7, 2026, at an event with a location to be announced.</p><p><strong>Venmo supporters:</strong> Include your email address with your donation. The webstore collects it automatically.</p></div>
           </details>
           <details id="official-rules">
             <summary>Official Rules</summary>
@@ -230,11 +233,11 @@ const fightingLesliesUrl = assetUrl('fighting-leslies-pride.jpeg');
               <p>The Raffle is open to individuals who:</p>
               <ol>
                 <li>Are at least 21 years old at the time of entry;</li>
-                <li>Are physically located within the State of Texas when purchasing their Raffle tickets; and</li>
+                <li>Are physically located within the Austin-Round Rock-San Marcos MSA when purchasing their Raffle tickets; and</li>
                 <li>Are otherwise legally eligible to participate under applicable law.</li>
               </ol>
-              <p>Texas residency is not required. A person who is not a Texas resident may enter while physically present in Texas.</p>
-              <p>Ticket purchases made while the purchaser is outside Texas are not eligible and may be canceled or refunded by Sponsor.</p>
+              <p>Texas residency is not required. A person who is not a Texas resident may enter while physically present in the Austin-Round Rock-San Marcos MSA.</p>
+              <p>Ticket purchases made while the purchaser is outside the Austin-Round Rock-San Marcos MSA are not eligible and may be canceled or refunded by Sponsor.</p>
               <p>Directors, officers, members, volunteers, supporters, and their family or household members may enter. Sponsor has no employees.</p>
               <p>Volunteer staff who administer the drawing must follow Sponsor's procedures and may not influence, manipulate, or alter the random selection process.</p>
               <p>By purchasing a ticket, each entrant represents that the entrant satisfies these eligibility requirements and agrees to be bound by these Official Rules and Sponsor's decisions.</p>
@@ -244,6 +247,7 @@ const fightingLesliesUrl = assetUrl('fighting-leslies-pride.jpeg');
               <ol>
                 <li>Austin Anthem's website at <a href="https://austinanthem.org" target="_blank" rel="noopener noreferrer">austinanthem.org</a>; or</li>
                 <li>The Fighting Leslies' authorized Venmo account identified in Sponsor's official Raffle materials.</li>
+                <li>In person events announced by a Sponsor's public channel.</li>
               </ol>
               <p>Tickets cost:</p>
               <ul>
@@ -303,7 +307,7 @@ const fightingLesliesUrl = assetUrl('fighting-leslies-pride.jpeg');
               <ul>
                 <li>Provide government-issued photo identification;</li>
                 <li>Confirm that the winner was at least 21 years old when entering;</li>
-                <li>Confirm that the ticket was purchased while the entrant was physically located in Texas;</li>
+                <li>Confirm that the ticket was purchased while the entrant was physically located in the Austin-Round Rock-San Marcos MSA;</li>
                 <li>Confirm compliance with these Official Rules;</li>
                 <li>Complete tax documentation if legally required;</li>
                 <li>Sign an eligibility certification, prize acknowledgment, liability release, or other reasonable documentation; and</li>
@@ -331,7 +335,7 @@ const fightingLesliesUrl = assetUrl('fighting-leslies-pride.jpeg');
               <h3>12. Invalid Entries and Payment Problems</h3>
               <p>Sponsor may reject or invalidate an entry associated with:</p>
               <ul>
-                <li>A purchase made while the purchaser was outside Texas;</li>
+                <li>A purchase made while the purchaser was outside the Austin-Round Rock-San Marcos MSA;</li>
                 <li>A declined, reversed, disputed, refunded, or charged-back payment;</li>
                 <li>Fraudulent or unauthorized payment activity;</li>
                 <li>Incomplete or materially inaccurate purchaser information;</li>
@@ -383,18 +387,29 @@ const fightingLesliesUrl = assetUrl('fighting-leslies-pride.jpeg');
       </section>
     </main>
 
-    <dialog class="venmo-dialog" id="venmo-dialog" aria-labelledby="venmo-dialog-title" aria-describedby="venmo-dialog-description">
+    <dialog class="venmo-dialog" id="venmo-dialog" aria-labelledby="venmo-dialog-title" aria-describedby="venmo-dialog-description venmo-confirmation">
       <div class="dialog-content">
         <button class="dialog-close" type="button" data-close-venmo aria-label="Close Venmo reminder">&times;</button>
         <p class="eyebrow eyebrow-dark">Before you join</p>
         <h2 id="venmo-dialog-title">One important note.</h2>
-        <p id="venmo-dialog-description">Include your email address in the Venmo notes so you can be contacted if you win.</p>
+        <p id="venmo-dialog-description">Include your name and email address in the Venmo notes so you can be contacted if you win.</p>
+        <p class="dialog-confirmation" id="venmo-confirmation">By participating, I confirm that I am purchasing this item within the Austin-Round Rock-San Marcos MSA, as required under state law.</p>
         <a class="button button-primary" id="venmo-proceed" href={venmoUrl} target="_blank" rel="noopener noreferrer">Proceed to Venmo</a>
       </div>
     </dialog>
 
+    <dialog class="venmo-dialog" id="donate-dialog" aria-labelledby="donate-dialog-title" aria-describedby="donate-dialog-description">
+      <div class="dialog-content">
+        <button class="dialog-close" type="button" data-close-donate aria-label="Close direct donation reminder">&times;</button>
+        <p class="eyebrow eyebrow-dark">Before you donate</p>
+        <h2 id="donate-dialog-title">One important note.</h2>
+        <p id="donate-dialog-description">Remember that you won't be entered for the raffle if you donate directly, but it's super awesome that you're donating!</p>
+        <a class="button button-primary" id="donate-proceed" href={donationUrl} target="_blank" rel="noopener noreferrer">Proceed to Equality Texas</a>
+      </div>
+    </dialog>
+
     <footer class="site-footer section-shell">
-      <div class="footer-top"><div><a class="wordmark footer-wordmark" href="#top"><img class="wordmark-logo" src={logoUrl} alt="" width="35" height="35" /><span>League of<br /><strong>Little Leslies</strong></span></a><p>A collaboration between Austin Anthem and The Fighting Leslies Drinking Club.</p></div><div class="footer-links"><a href="#official-rules">Official rules</a><a href="#why">About the cause</a><a href="mailto:hello@example.com">Contact the league office</a></div></div>
+      <div class="footer-top"><div><a class="wordmark footer-wordmark" href="#top"><img class="wordmark-logo" src={logoUrl} alt="" width="35" height="35" /><span>League of<br /><strong>Little Leslies</strong></span></a><p>A collaboration between Austin Anthem and The Fighting Leslies Drinking Club.</p></div><div class="footer-links"><a href="#official-rules">Official rules</a><a href="#why">About the cause</a><a href="mailto:leadership@austinanthem.org">Contact the league office</a></div></div>
       <div class="footer-bottom"><span>&copy; 2026 MLS in Austin Supporters Group</span><span>Made with joy in Austin, Texas.</span></div>
     </footer>
     <script>
@@ -412,6 +427,22 @@ const fightingLesliesUrl = assetUrl('fighting-leslies-pride.jpeg');
       closeVenmo?.addEventListener('click', () => venmoDialog?.close());
       venmoDialog?.addEventListener('click', (event) => {
         if (event.target === venmoDialog) venmoDialog.close();
+      });
+
+      const donateDialog = document.querySelector('#donate-dialog');
+      const donateLinks = document.querySelectorAll('[data-donate-link]');
+      const closeDonate = donateDialog?.querySelector('[data-close-donate]');
+
+      donateLinks.forEach((link) => {
+        link.addEventListener('click', (event) => {
+          event.preventDefault();
+          donateDialog?.showModal();
+        });
+      });
+
+      closeDonate?.addEventListener('click', () => donateDialog?.close());
+      donateDialog?.addEventListener('click', (event) => {
+        if (event.target === donateDialog) donateDialog.close();
       });
 
       const officialRules = document.querySelector('#official-rules');

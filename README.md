@@ -57,9 +57,6 @@ Enable **Enforce HTTPS** in the repository's GitHub Pages settings after DNS pro
 
 The public preview still contains launch placeholders. Complete the following before accepting entries:
 
-- Real Venmo URL in `src/pages/index.astro`
-- Real webstore URL in `src/pages/index.astro`
-- Real footer contact email in `src/pages/index.astro` (currently `hello@example.com`)
 - Final legal and beneficiary review
 
 Do not accept public entries until the purchase links, official rules, and required disclosures are complete.
