@@ -8,6 +8,8 @@ const logoUrl = assetUrl('league-of-leslies.png');
 const bothLesliesUrl = assetUrl('leslies/both-leslies.png');
 const prideLeslieUrl = assetUrl('leslies/pride-kit-leslie.png');
 const austinLeslieUrl = assetUrl('leslies/austin-kit-leslie.png');
+const anthemUrl = assetUrl('anthem-pride.jpg');
+const fightingLesliesUrl = assetUrl('fighting-leslies-pride.jpeg');
 ---
 
 <!doctype html>
@@ -151,6 +153,50 @@ const austinLeslieUrl = assetUrl('leslies/austin-kit-leslie.png');
         </div>
       </section>
 
+      <section class="partners" aria-labelledby="partners-title">
+        <div class="section-shell">
+          <div class="section-grid partners-intro">
+            <div><p class="eyebrow eyebrow-dark">League partners</p><h2 id="partners-title">Built by<br /><em>the supporters.</em></h2></div>
+            <p class="partners-intro-copy">The League of Little Leslies is a collaboration between two Austin supporters organizations with a shared love of soccer, community, and making a difference at home.</p>
+          </div>
+          <div class="partner-grid">
+            <article class="partner-card">
+              <div class="partner-art"><img src={anthemUrl} alt="Austin Anthem Pride artwork" loading="lazy" /></div>
+              <div class="partner-copy">
+                <h3>Austin Anthem</h3>
+                <nav class="partner-links" aria-label="Austin Anthem links">
+                  <a href="https://austinanthem.org" target="_blank" rel="noopener noreferrer">Website</a>
+                  <a href="https://bsky.app/profile/austinanthem.org" target="_blank" rel="noopener noreferrer">Bluesky</a>
+                  <a href="https://austinanthem.org/discord/" target="_blank" rel="noopener noreferrer">Discord</a>
+                  <a href="https://www.facebook.com/austinanthem/" target="_blank" rel="noopener noreferrer">Facebook</a>
+                  <a href="https://www.instagram.com/austinanthem/" target="_blank" rel="noopener noreferrer">Instagram</a>
+                  <a href="https://www.threads.com/@austinanthem" target="_blank" rel="noopener noreferrer">Threads</a>
+                  <a href="https://www.tiktok.com/@austinanthem" target="_blank" rel="noopener noreferrer">TikTok</a>
+                </nav>
+                <p>Austin Anthem is the supporters group which created the movement for Austin FC. Founded in 2013, with a goal to bring Major League Soccer to Austin: We succeeded.</p>
+                <p>Now we're on a mission to build the best, most inclusive soccer supporters organization for fans and other supporter organizations.</p>
+              </div>
+            </article>
+            <article class="partner-card">
+              <div class="partner-art"><img src={fightingLesliesUrl} alt="Fighting Leslies Drinking Club Pride artwork" loading="lazy" /></div>
+              <div class="partner-copy">
+                <h3>Fighting Leslies Drinking Club</h3>
+                <nav class="partner-links" aria-label="Fighting Leslies Drinking Club links">
+                  <a href="https://fightinglesliesdc.com" target="_blank" rel="noopener noreferrer">Website</a>
+                  <a href="https://www.facebook.com/fightingleslies" target="_blank" rel="noopener noreferrer">Facebook</a>
+                  <a href="https://www.instagram.com/fightinglesliesdc/" target="_blank" rel="noopener noreferrer">Instagram</a>
+                </nav>
+                <p>It started as a gaggle of natives and long-timers that managed to procure a bunch of season tickets together for the inaugural Austin FC season. Once secured, it was agreed that the group needed a name. Something edgy, cool and border-line offensive; a name representative of the group itself.</p>
+                <p>Amid the anticipation and excitement we decided to get more involved with our new soccer-loving brethren in the community.</p>
+                <p class="partner-pull">After all, this is the place we call <em>home.</em></p>
+                <p>Now we are a Drinking Club with a supporters group that looks to raise both awareness and funds for locally-based causes in which we believe will have a positive impact on our community. Having a ton of fun while accomplishing this is our priority.</p>
+                <p class="partner-close">We are #Listos! We are #Verde!<br />We are the Fighting Leslies Drinking Club and<br />We Are Austin.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
       <section class="league-rules">
         <div class="section-shell">
           <p class="eyebrow eyebrow-dark">League rules</p>
@@ -166,7 +212,170 @@ const austinLeslieUrl = assetUrl('leslies/austin-kit-leslie.png');
           </details>
           <details id="official-rules">
             <summary>Official Rules</summary>
-            <div class="rule-content"><p>Every player must be unique. Every player must bring a little more joy into the world. Every player must help support a more inclusive Texas. Nobody is allowed to be boring.</p><p>Formal raffle rules, eligibility details, and required disclosures will be posted here before entries open.</p></div>
+            <div class="rule-content official-rule-content">
+              <h3>1. Sponsor</h3>
+              <p>The Austin Anthem Leslie Cochran Figure Raffle ("Raffle") is sponsored and conducted by MLS in Austin Supporters Group, a nonprofit organization doing business as Austin Anthem ("Sponsor").</p>
+              <p>Sponsor is recognized as tax-exempt under Section 501(c)(3) of the Internal Revenue Code and was formed on December 6, 2017.</p>
+              <p><strong>Sponsor address:</strong><br />MLS in Austin Supporters Group<br />P.O. Box 80573<br />Austin, Texas 78708</p>
+              <p>Questions concerning the Raffle may be directed to <a href="mailto:leadership@austinanthem.org">leadership@austinanthem.org</a>.</p>
+
+              <h3>2. Raffle Period</h3>
+              <p>The Raffle begins on August 6, 2026, and ends on September 7, 2026, immediately before the drawing begins ("Raffle Period").</p>
+              <p>The drawing and awarding of prizes will occur on September 7, 2026.</p>
+              <p>The event name, event location, and drawing time will be announced through <a href="https://austinanthem.org" target="_blank" rel="noopener noreferrer">austinanthem.org</a> or another official Austin Anthem communication channel before the drawing.</p>
+              <p>Entries submitted after ticket sales close are void.</p>
+
+              <h3>3. Eligibility</h3>
+              <p>The Raffle is open to individuals who:</p>
+              <ol>
+                <li>Are at least 21 years old at the time of entry;</li>
+                <li>Are physically located within the State of Texas when purchasing their Raffle tickets; and</li>
+                <li>Are otherwise legally eligible to participate under applicable law.</li>
+              </ol>
+              <p>Texas residency is not required. A person who is not a Texas resident may enter while physically present in Texas.</p>
+              <p>Ticket purchases made while the purchaser is outside Texas are not eligible and may be canceled or refunded by Sponsor.</p>
+              <p>Directors, officers, members, volunteers, supporters, and their family or household members may enter. Sponsor has no employees.</p>
+              <p>Volunteer staff who administer the drawing must follow Sponsor's procedures and may not influence, manipulate, or alter the random selection process.</p>
+              <p>By purchasing a ticket, each entrant represents that the entrant satisfies these eligibility requirements and agrees to be bound by these Official Rules and Sponsor's decisions.</p>
+
+              <h3>4. How to Enter</h3>
+              <p>Raffle tickets may be purchased during the Raffle Period through:</p>
+              <ol>
+                <li>Austin Anthem's website at <a href="https://austinanthem.org" target="_blank" rel="noopener noreferrer">austinanthem.org</a>; or</li>
+                <li>The Fighting Leslies' authorized Venmo account identified in Sponsor's official Raffle materials.</li>
+              </ol>
+              <p>Tickets cost:</p>
+              <ul>
+                <li>One ticket for $10; or</li>
+                <li>Six tickets for $50.</li>
+              </ul>
+              <p>Each ticket represents one chance to win. A purchase of six tickets for $50 provides six separate chances to win.</p>
+              <p>Purchasers must provide sufficient information for Sponsor to identify the entrant and administer the Raffle. Sponsor may request the purchaser's full name, email address, telephone number, Venmo username, payment reference, or other identifying information reasonably necessary to associate the purchase with the purchaser's tickets.</p>
+              <p>A payment is not a valid entry unless Sponsor receives and accepts it and assigns the purchaser the applicable numbered ticket or tickets.</p>
+              <p>No person other than Sponsor or a volunteer expressly authorized by Sponsor may sell or offer to sell Raffle tickets.</p>
+
+              <h3>5. Numbered Tickets and Purchase Records</h3>
+              <p>Authorized volunteer staff will assign a unique numbered ticket to each chance purchased.</p>
+              <p>A purchaser who buys six tickets for $50 will be assigned six unique ticket numbers.</p>
+              <p>Sponsor will maintain an official record associating each numbered ticket with the purchaser. That record will control in the event of a discrepancy involving a payment record, purchaser communication, ticket number, or other entry information.</p>
+              <p>Each ticket or ticket confirmation will identify:</p>
+              <ul>
+                <li>MLS in Austin Supporters Group as the organization conducting the Raffle;</li>
+                <li>Sponsor's address;</li>
+                <li>The applicable ticket price;</li>
+                <li>The prize or prizes being offered; and</li>
+                <li>September 7, 2026, as the date the prizes will be awarded.</li>
+              </ul>
+              <p>Purchasers may request their assigned ticket numbers by contacting <a href="mailto:leadership@austinanthem.org">leadership@austinanthem.org</a>.</p>
+              <p>Tickets may not be transferred after issuance unless Sponsor approves the transfer and updates its official records before ticket sales close.</p>
+              <p>All purchases are final and nonrefundable except when a refund is required by law, an entry is rejected because the purchaser was outside Texas, or Sponsor cancels the Raffle without conducting the drawing.</p>
+
+              <h3>6. Prizes</h3>
+              <p>Ten prizes will be awarded.</p>
+              <p>Each prize consists of one Leslie Cochran figure with an approximate retail value of $9.</p>
+              <p>The total approximate retail value of all ten prizes is $90.</p>
+              <p>Ten separate winners will be selected, with each winner receiving one figure.</p>
+              <p>No cash alternative will be offered. A winner may not exchange or substitute the prize.</p>
+              <p>Sponsor may substitute another noncash prize of equal or greater value if a figure becomes unavailable for reasons outside Sponsor's reasonable control, to the extent permitted by law.</p>
+              <p>Sponsor confirms that the ten figures are in Sponsor's possession or ownership before the Raffle is conducted.</p>
+              <p>Each winner is responsible for any federal, state, or local taxes and any costs associated with accepting or collecting the prize that are not expressly stated as being provided by Sponsor.</p>
+
+              <h3>7. Drawing</h3>
+              <p>The drawing will take place on September 7, 2026, during an in-person event.</p>
+              <p>The following details will be announced before the drawing:</p>
+              <p><strong>Event name:</strong> To be announced<br /><strong>Location:</strong> To be announced<br /><strong>Drawing time:</strong> To be announced</p>
+              <p>Ten numbered tickets will be selected at random from the single pool of all eligible tickets.</p>
+              <p>The drawing will be conducted or supervised by authorized volunteer staff using a random-selection process intended to give every eligible ticket an equal chance of selection.</p>
+              <p>A participant does not need to be present at the drawing to win.</p>
+              <p>Sponsor's decisions regarding the administration of the drawing, eligibility of entries, and identification of winners are final, subject to applicable law.</p>
+
+              <h3>8. Limit of One Prize per Person</h3>
+              <p>Each person may win no more than one prize.</p>
+              <p>Once a person's ticket is selected, all other tickets assigned to that person will be removed from consideration or disregarded during the remaining drawings.</p>
+              <p>If another ticket assigned to an already-selected winner is drawn, that ticket will be void for purposes of that selection, and Sponsor will draw another ticket.</p>
+              <p>A person's remaining tickets are not eligible to win a prize after that person has been selected as a winner.</p>
+
+              <h3>9. Winner Notification and Response Period</h3>
+              <p>Sponsor will attempt to contact each potential winner using the contact information associated with the selected ticket.</p>
+              <p>Each potential winner will be given at least 48 hours from Sponsor's initial notification to respond. The specific response deadline will be included in the notification.</p>
+              <p>A potential winner may be required to:</p>
+              <ul>
+                <li>Provide government-issued photo identification;</li>
+                <li>Confirm that the winner was at least 21 years old when entering;</li>
+                <li>Confirm that the ticket was purchased while the entrant was physically located in Texas;</li>
+                <li>Confirm compliance with these Official Rules;</li>
+                <li>Complete tax documentation if legally required;</li>
+                <li>Sign an eligibility certification, prize acknowledgment, liability release, or other reasonable documentation; and</li>
+                <li>Make arrangements to collect or receive the prize.</li>
+              </ul>
+              <p>A potential winner may be disqualified if the person:</p>
+              <ul>
+                <li>Cannot be contacted using the information provided;</li>
+                <li>Does not respond by the stated deadline;</li>
+                <li>Does not satisfy the eligibility requirements;</li>
+                <li>Provides false or misleading information;</li>
+                <li>Declines the prize; or</li>
+                <li>Does not complete reasonably required documentation.</li>
+              </ul>
+              <p>If a potential winner is disqualified, Sponsor may randomly select an alternate winner from the remaining eligible tickets, subject to the one-prize-per-person limit.</p>
+
+              <h3>10. Odds of Winning</h3>
+              <p>The odds of winning depend on the total number of eligible tickets sold and the number of individual purchasers represented in the drawing.</p>
+              <p>Ten winners will be selected from a single pool of eligible tickets, subject to the limitation of one prize per person.</p>
+
+              <h3>11. Use of Proceeds</h3>
+              <p>All proceeds from Raffle ticket sales will be used for the charitable purposes of MLS in Austin Supporters Group.</p>
+              <p>No portion of the proceeds will be distributed for the private benefit of an individual, except for reasonable and legally permitted expenses associated with conducting the Raffle.</p>
+
+              <h3>12. Invalid Entries and Payment Problems</h3>
+              <p>Sponsor may reject or invalidate an entry associated with:</p>
+              <ul>
+                <li>A purchase made while the purchaser was outside Texas;</li>
+                <li>A declined, reversed, disputed, refunded, or charged-back payment;</li>
+                <li>Fraudulent or unauthorized payment activity;</li>
+                <li>Incomplete or materially inaccurate purchaser information;</li>
+                <li>A duplicate ticket created through technical or administrative error;</li>
+                <li>Tampering with the website, payment process, ticket records, or drawing;</li>
+                <li>Automated, deceptive, or abusive purchasing activity; or</li>
+                <li>A violation of these Official Rules.</li>
+              </ul>
+              <p>If a payment covering multiple tickets is reversed or invalidated, all tickets associated with that payment may be canceled.</p>
+              <p>Sponsor is not responsible for internet failures, payment-platform interruptions, delayed transactions, lost communications, or technical problems outside Sponsor's reasonable control.</p>
+              <p>Sponsor will make reasonable efforts to correct administrative or technical errors in a manner that preserves the fairness and integrity of the Raffle.</p>
+
+              <h3>13. Postponement, Modification, or Cancellation</h3>
+              <p>Sponsor may postpone the drawing or modify administrative details when reasonably necessary because of severe weather, venue closure, technical failure, emergency, legal requirements, or circumstances outside Sponsor's reasonable control.</p>
+              <p>Any material change to the event location, drawing time, sales deadline, or drawing procedures will be announced through <a href="https://austinanthem.org" target="_blank" rel="noopener noreferrer">austinanthem.org</a> or another official Austin Anthem communication channel.</p>
+              <p>If Sponsor cancels the Raffle without conducting the drawing, Sponsor will issue refunds as required by applicable law.</p>
+              <p>Sponsor will not cancel or modify the Raffle merely to avoid awarding the advertised prizes.</p>
+
+              <h3>14. Publicity</h3>
+              <p>Except where prohibited by law, each confirmed winner agrees that Sponsor may publish the winner's first name, last initial, city, photograph, likeness, or an image of the prize presentation for nonprofit news, reporting, and promotional purposes without additional compensation.</p>
+              <p>Sponsor may request a separate written release before using a winner's full name, detailed personal information, or likeness in a paid advertisement.</p>
+
+              <h3>15. Release and Limitation of Liability</h3>
+              <p>To the fullest extent permitted by law, entrants and winners release Sponsor and its directors, officers, members, volunteers, representatives, prize donors, and event partners from claims arising from participation in the Raffle or the acceptance, possession, use, or misuse of a prize.</p>
+              <p>This provision does not waive or limit liability that cannot legally be waived or limited.</p>
+              <p>Sponsor makes no warranty concerning a prize except for any warranty expressly provided by its manufacturer or donor.</p>
+
+              <h3>16. Privacy</h3>
+              <p>Sponsor will use entrant information to process purchases, assign and record numbered tickets, administer the drawing, contact potential winners, deliver prizes, comply with legal obligations, maintain required records, and prevent fraud.</p>
+              <p>Purchasing a Raffle ticket does not automatically enroll an entrant in marketing communications unless the entrant separately agrees to receive them.</p>
+              <p>Questions about the use of entrant information may be directed to <a href="mailto:leadership@austinanthem.org">leadership@austinanthem.org</a>.</p>
+
+              <h3>17. Compliance With Texas Law</h3>
+              <p>The Raffle is intended to be conducted pursuant to the Texas Charitable Raffle Enabling Act and other applicable laws.</p>
+              <p>The Raffle is void where prohibited.</p>
+              <p>Sponsor may reject an entry or take other reasonable action when necessary to comply with applicable law, protect the integrity of the Raffle, or correct an administrative error.</p>
+
+              <h3>18. Governing Law</h3>
+              <p>These Official Rules and the Raffle are governed by the laws of the State of Texas.</p>
+              <p>Any dispute arising from the Raffle will be resolved in a court of competent jurisdiction in Travis County, Texas, unless applicable law requires another forum.</p>
+
+              <h3>19. Winner Information</h3>
+              <p>After eligibility is confirmed, Sponsor may announce the winners through <a href="https://austinanthem.org" target="_blank" rel="noopener noreferrer">austinanthem.org</a>, Austin Anthem's official social-media channels, or communications associated with the in-person event.</p>
+              <p>A list of confirmed winners may also be requested by emailing <a href="mailto:leadership@austinanthem.org">leadership@austinanthem.org</a>.</p>
+            </div>
           </details>
           </div>
         </div>
